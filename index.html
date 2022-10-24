@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>YSL login page</title>
+   <!-- Css Link -->
+   <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body style="background-image: url(images/lock.gif); background-position: center;">
+  
+   <!-- Main Container -->
+   <div class="main-container" >
+      <!-- Main Box -->
+      <div class="main-box">
+         <h1>LOGIN</h1>
+         <div class="notice">
+            <span id="stat">LOCKED</span>
+         </div>
+         <!-- text input -->
+         <form class="box1">
+            <div>
+            <input type="text" id="idtext" placeholder="ID">
+            </div>
+            <div>
+            <input type="password" id="pwtext" placeholder="PW">
+            </div>   
+         </form>
+
+         <!-- button -->
+         <div class="box2">
+            <button class="btn" onclick="Game()"> Check </button>
+         </div>
+      </div>
+   </div>
+
+   <!-- button function-->
+   <script>
+      function Game(){
+         var user= document.getElementById("idtext").value;
+         var pw = document.getElementById("pwtext").value;
+
+         if( user == "102" && pw == 960312){
+            document.getElementById("stat").innerHTML = 'Welcome home. Won-Young' + "<br>" + "<a href='Hall.html'>>>>UNLOCKED<<<</a>";
+            document.body.style.backgroundImage = "url('images/unlock.gif')";
+            document.body.style.backgroundPosition = "center";
+         }
+         else if( user == "INI" && pw == 950831){
+            document.getElementById("stat").innerHTML = 'Welcome home. Hea-In' + "<br>" +"<a href='Hall.html'>>>>UNLOCKED<<<</a>";
+            document.body.style.backgroundImage = "url('images/unlock.gif')";
+            document.body.style.backgroundPosition = "center";
+         }
+         else{
+             document.getElementById("stat").innerHTML = "Try Again";
+         }
+      }
+   </script>
+
+</body>
+</html>
