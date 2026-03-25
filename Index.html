@@ -6,10 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>YSL login page</title>
    <!-- Css Link -->
-   <link rel="stylesheet" href="css/login.css">
+   <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
-<body style="background-image: url(images/lock.gif); background-position: center;">
+<body style="background-image: url(assets/images/lock.gif); background-position: center;">
   
    <!-- Main Container -->
    <div class="main-container" >
@@ -43,13 +43,13 @@
          var pw = document.getElementById("pwtext").value;
 
          if( user == "102" && pw == 960312){
-            document.getElementById("stat").innerHTML = 'Welcome home. Won-Young' + "<br>" + "<a href='Hall.html'>>>>UNLOCKED<<<</a>";
-            document.body.style.backgroundImage = "url('images/unlock.gif')";
+            document.getElementById("stat").innerHTML = 'Welcome home. Won-Young' + "<br>" + "<a href='pages/hall.html'>>>>UNLOCKED<<<</a>";
+            document.body.style.backgroundImage = "url('assets/images/unlock.gif')";
             document.body.style.backgroundPosition = "center";
          }
          else if( user == "INI" && pw == 950831){
-            document.getElementById("stat").innerHTML = 'Welcome home. Hea-In' + "<br>" +"<a href='Hall.html'>>>>UNLOCKED<<<</a>";
-            document.body.style.backgroundImage = "url('images/unlock.gif')";
+            document.getElementById("stat").innerHTML = 'Welcome home. Hea-In' + "<br>" +"<a href='pages/hall.html'>>>>UNLOCKED<<<</a>";
+            document.body.style.backgroundImage = "url('assets/images/unlock.gif')";
             document.body.style.backgroundPosition = "center";
          }
          else{
